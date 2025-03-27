@@ -17,7 +17,7 @@ declare const messages: {
     "privacy": "Privacy Notice"
   },
   "SellForm": {
-    "title": "What are you sell?",
+    "title": "What are you selling?",
 
     "bookName": "Book Name",
     "bookNamePlaceholder": "The Little Prince",
