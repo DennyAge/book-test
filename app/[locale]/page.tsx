@@ -12,6 +12,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { BookCard } from "@/components/BookCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 
 const HomePage = () => {
   const { books, fetchBooks } = useBookStore();
@@ -30,7 +31,7 @@ const HomePage = () => {
       fetchBooks();
     }
     setTimeout(() => setLoading(false), 1000);
-  }, [fetchBooks]);
+  }, [books.length, fetchBooks]);
 
   const filteredBooks = books.filter((book) =>
     book.title.toLowerCase().includes(search.toLowerCase()),
@@ -66,7 +67,12 @@ const HomePage = () => {
 
       <div className="container mx-auto px-4 md:px-0">
         <div
-          className={`grid gap-4 pt-4 border-t border-gray-200 ${view === "grid" ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5" : "grid-cols-1"}`}
+          className={cn(
+            "grid gap-4 pt-4 border-t border-gray-200",
+            view === "grid"
+              ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+              : "grid-cols-1",
+          )}
         >
           {loading
             ? Array.from({ length: booksPerPage }).map((_, index) => (
