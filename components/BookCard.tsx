@@ -44,8 +44,8 @@ export const BookCard = ({
         loading="lazy"
         className={cn(
           view === "grid"
-            ? "w-max mx-auto h-80 rounded-lg mb-2"
-            : "w-32 h-40 object-cover rounded-lg",
+            ? "w-max mx-auto h-50  rounded-lg mb-2"
+            : "w-32 h-40 object-cover  rounded-tl-lg rounded-bl-lg",
         )}
       />
       <div
