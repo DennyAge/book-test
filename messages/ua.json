@@ -1,0 +1,39 @@
+{
+  "LocaleSwitcher": {
+    "locale": "{locale, select, pl {PL} en {ENG} ua {UA} other {Невідомо}}"
+  },
+  "Navigation": {
+    "home": "Головна",
+    "sell": "Продати",
+    "profile": "Профіль"
+  },
+  "Footer": {
+    "faq": "FAQ",
+    "startWithBookflea": "Почніть продавати з Bookflea",
+    "terms": "Умови використання",
+    "privacy": "Політика конфіденційності"
+  },
+  "SellForm": {
+    "title": "Що ви хочете продати?",
+    "bookName": "Назва книги",
+    "bookNamePlaceholder": "Маленький принц",
+    "author": "Ім'я автора",
+    "authorPlaceholder": "Антуан де Сент-Екзюпері",
+    "price": "Ціна (злотий)",
+    "pricePlaceholder": "25",
+    "bookImage": "Фотографії",
+    "bookImagePlaceholder": "Додайте фотографії...",
+    "bookImageSubText": "Завантажте до 5 фотографій",
+    "btnText": "Надіслати"
+  },
+  "validationErrors": {
+    "bookNameError": "Назва книги повинна містити хоча б 2 символи.",
+    "authorError": "Ім'я автора повинно містити хоча б 2 символи.",
+    "priceError": "Ціна повинна містити хоча б 2 символи.",
+    "bookImageExist": "Будь ласка, завантажте зображення.",
+    "bookImageMaxLength": "Максимальна кількість завантажених зображень: 5"
+  },
+  "sellBookBtnText": "Продати книгу",
+  "homePageTitle": "Всі книги:",
+  "searchInputPlaceholder": "Пошук книг..."
+}

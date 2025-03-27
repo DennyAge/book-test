@@ -1,0 +1,46 @@
+{
+  "LocaleSwitcher": {
+    "locale": "{locale, select, pl {PL} en {ENG} ua { UA} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "sell": "Sell",
+    "profile": "Profile"
+  },
+  "Footer": {
+    "faq":  "FAQ",
+    "startWithBookflea":  "Start selling with Bookflea",
+    "terms":  "Terms of Use",
+    "privacy": "Privacy Notice"
+  },
+  "SellForm": {
+    "title": "What are you sell?",
+
+    "bookName": "Book Name",
+    "bookNamePlaceholder": "The Little Prince",
+
+    "author": "Author Name",
+    "authorPlaceholder": "Antoine de Saint-Exupery",
+
+    "price": "Price (zl)",
+    "pricePlaceholder": "25",
+
+    "bookImage": "Photos",
+    "bookImagePlaceholder": "Add photos...",
+    "bookImageSubText": "Upload up to 5 photos",
+
+    "btnText": "Submit"
+  },
+
+  "validationErrors": {
+    "bookNameError": "Book name must be at least 2 characters.",
+    "authorError": "Author must be at least 2 characters.",
+    "priceError": "Price must be at least 2 characters.",
+    "bookImageExist": "Please upload image",
+    "bookImageMaxLength": "Max upload 5 images"
+  },
+
+  "sellBookBtnText": "Sell book",
+  "homePageTitle": "All book:",
+  "searchInputPlaceholder": "Book search..."
+}

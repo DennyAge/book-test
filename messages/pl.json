@@ -1,0 +1,39 @@
+{
+  "LocaleSwitcher": {
+    "locale": "{locale, select, pl {PL} en {ENG} ua {UA} other {Nieznany}}"
+  },
+  "Navigation": {
+    "home": "Strona główna",
+    "sell": "Sprzedaj",
+    "profile": "Profil"
+  },
+  "Footer": {
+    "faq": "FAQ",
+    "startWithBookflea": "Zacznij sprzedawać z Bookflea",
+    "terms": "Warunki użytkowania",
+    "privacy": "Polityka prywatności"
+  },
+  "SellForm": {
+    "title": "Co chcesz sprzedać?",
+    "bookName": "Nazwa książki",
+    "bookNamePlaceholder": "Mały Książę",
+    "author": "Imię autora",
+    "authorPlaceholder": "Antoine de Saint-Exupéry",
+    "price": "Cena (zl)",
+    "pricePlaceholder": "25",
+    "bookImage": "Zdjęcia",
+    "bookImagePlaceholder": "Dodaj zdjęcia...",
+    "bookImageSubText": "Prześlij do 5 zdjęć",
+    "btnText": "Prześlij"
+  },
+  "validationErrors": {
+    "bookNameError": "Nazwa książki musi mieć co najmniej 2 znaki.",
+    "authorError": "Imię autora musi mieć co najmniej 2 znaki.",
+    "priceError": "Cena musi mieć co najmniej 2 znaki.",
+    "bookImageExist": "Proszę przesłać obrazek.",
+    "bookImageMaxLength": "Maksymalna liczba przesyłanych zdjęć: 5"
+  },
+  "sellBookBtnText": "Sprzedaj książkę",
+  "homePageTitle": "Wszystkie książki:",
+  "searchInputPlaceholder": "Szukaj książki..."
+}
