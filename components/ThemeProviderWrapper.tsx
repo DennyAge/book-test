@@ -15,7 +15,7 @@ export function ThemeProviderWrapper({ children }: { children: ReactNode }) {
   }
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system">
+    <ThemeProvider attribute="class" defaultTheme="light">
       {children}
     </ThemeProvider>
   );
