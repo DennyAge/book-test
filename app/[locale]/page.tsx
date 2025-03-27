@@ -66,7 +66,7 @@ const HomePage = () => {
 
       <div className="container mx-auto px-4 md:px-0">
         <div
-          className={`grid gap-4 pt-4 border-t border-gray-200 ${view === "grid" ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5" : "grid-cols-1"}`}
+          className={`grid gap-4 pt-4 border-t border-gray-200 ${view === "grid" ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5" : "grid-cols-1"}`}
         >
           {loading
             ? Array.from({ length: booksPerPage }).map((_, index) => (
