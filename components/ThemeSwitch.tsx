@@ -1,3 +1,5 @@
+"use client";
+
 //core
 import { GoMoon, GoSun } from "react-icons/go";
 import { useTheme } from "next-themes";

@@ -1,4 +1,3 @@
-"use client";
 import { useTranslations } from "next-intl";
 //utils
 import { Link } from "@/i18n/navigation";
