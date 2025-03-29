@@ -38,7 +38,7 @@ declare const messages: {
   "validationErrors": {
     "bookNameError": "Book name must be at least 2 characters.",
     "authorError": "Author must be at least 2 characters.",
-    "priceError": "Price must be at least 2 characters.",
+    "priceError": "Price must be at least 1 character.",
     "bookImageExist": "Please upload image",
     "bookImageMaxLength": "Max upload 5 images"
   },
