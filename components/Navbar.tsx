@@ -1,9 +1,6 @@
-"use client";
-
 //core
 import { LuBookPlus } from "react-icons/lu";
 import { useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 //hooks
 import { Link } from "@/i18n/navigation";
@@ -13,13 +10,12 @@ import { cn } from "@/lib/utils";
 import UserAvatar from "@/components/UserAvatar";
 
 const Navbar = () => {
-  const { theme } = useTheme();
   const t = useTranslations();
   return (
-    <header className="hidden md:flex sticky z-20 top-0 backdrop-blur-lg">
+    <header className="hidden md:flex fixed w-full h-20 z-20 top-0 backdrop-blur-lg">
       <div
         className={cn(
-          "container mx-auto flex items-center justify-between w-full px-4 md:px-0 py-4 border-b border-gray-200",
+          "container mx-auto flex items-center justify-between w-full px-4 md:px-0 py-4 dark:border-input",
         )}
       >
         <Link href="/">
@@ -28,16 +24,14 @@ const Navbar = () => {
             alt="logo"
             width={100}
             height={40}
-            className={cn(theme === "dark" ? "invert" : "")}
+            className="logo invert w-auto h-auto"
+            priority
           />
         </Link>
         <div className="flex items-center space-x-2">
           <Link
             className={cn(
-              "flex items-center gap-x-2 px-4 text-sm md:text-base py-2  rounded-md border ",
-              theme === "dark"
-                ? " bg-white text-black border-white hover:opacity-80"
-                : "bg-black text-white border-white hover:opacity-80",
+              "flex items-center gap-x-2 px-4 text-sm md:text-base py-2  rounded-md border bg-foreground text-background  hover:opacity-80",
             )}
             href="/sell"
           >

@@ -10,7 +10,12 @@ const withNextIntl = createNextIntlPlugin({
 
 const config: NextConfig = {
   images: {
-    domains: ["avatars.githubusercontent.com"],
+    domains: [
+      "avatars.githubusercontent.com",
+      "upcdn.io",
+      "ik.imagekit.io",
+      "d28hgpri8am2if.cloudfront.net",
+    ],
   },
 };
 
