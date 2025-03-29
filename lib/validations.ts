@@ -7,10 +7,10 @@ export const FormSchema = z.object({
   author: z.string().min(2, {
     message: "authorError",
   }),
-  price: z.string().min(2, {
+  price: z.string().min(1, {
     message: "priceError",
   }),
-  image: z
+  images: z
     .array(z.string())
     .min(1, {
       message: "bookImageExist",
