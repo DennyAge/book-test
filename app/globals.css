@@ -169,6 +169,10 @@
 
   --sidebar-ring: oklch(0.708 0 0);
 
+  .logo {
+    --tw-invert: invert(0%);
+  }
+
 }
 
 .dark {
@@ -234,6 +238,9 @@
 
   --sidebar-ring: oklch(0.556 0 0);
 
+  .logo {
+   --tw-invert: invert(100%);
+  }
 }
 
 @layer base {

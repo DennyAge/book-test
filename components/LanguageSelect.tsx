@@ -1,5 +1,4 @@
 "use client";
-
 //core
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
