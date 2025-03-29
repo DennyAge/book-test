@@ -1,51 +1,46 @@
 //core
 import Image from "next/image";
-import { PiHeartFill, PiHeart } from "react-icons/pi";
-//store
-import { useBookStore } from "@/store/books";
 //utils
 import { cn } from "@/lib/utils";
 //components
-import { Button } from "@/components/ui/button";
+import FavoriteButton from "@/components/FavoriteButton";
 
 interface BookCardProps {
-  id: number;
+  id: string;
   title: string;
   author: string;
   price: string;
-  image: string[];
-  isFavorite: boolean;
-  view: "grid" | "list";
+  images: string[];
+  isFavorite: boolean | null;
+  view: string | string[];
 }
 
-export const BookCard = ({
+const BookCard = async ({
   id,
   title,
   author,
   price,
-  image,
+  images,
   isFavorite,
   view,
 }: BookCardProps) => {
-  const { toggleFavorite } = useBookStore();
-
   return (
     <div
       className={cn(
         "border dark:bg-input/30 border-input rounded-lg relative shadow-sm group",
-        view === "grid" ? "flex flex-col  p-4" : "flex items-center space-x-4",
+        view === "grid" ? "flex flex-col p-4" : "flex items-center space-x-4",
       )}
     >
       <Image
-        src={image[0] || "/images/book3.jpg"}
-        width="100"
+        src={images[0] || "/images/book3.jpg"}
+        width="150"
         height="100"
         alt={title}
         loading="lazy"
         className={cn(
           view === "grid"
-            ? "w-max mx-auto h-50  rounded-lg mb-2"
-            : "w-32 h-40 object-cover  rounded-tl-lg rounded-bl-lg",
+            ? " mx-auto h-60 w-50 rounded-lg mb-2"
+            : "w-32 h-40 object-cover rounded-tl-lg rounded-bl-lg",
         )}
       />
       <div
@@ -60,20 +55,10 @@ export const BookCard = ({
         <p className={cn("text-lg", view !== "grid" && "text-right")}>
           {price} zł
         </p>
-        <div
-          className={cn(
-            "absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity",
-          )}
-        >
-          <Button size="icon" variant="icon" onClick={() => toggleFavorite(id)}>
-            {isFavorite ? (
-              <PiHeartFill className="text-red-600" />
-            ) : (
-              <PiHeart />
-            )}
-          </Button>
-        </div>
+        <FavoriteButton bookId={id} isFavorite={isFavorite} />
       </div>
     </div>
   );
 };
+
+export default BookCard;
